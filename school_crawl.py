@@ -7,6 +7,8 @@ import os
 import mistune
 try:
     import ConfigParser
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
 except:
     import configparser as ConfigParser
 import smtplib
@@ -14,8 +16,7 @@ from smtplib import SMTP_SSL
 from email.header import Header
 from email.mime.text import MIMEText
 from bs4 import BeautifulSoup
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
 parser = ConfigParser.ConfigParser()
 parser.read('./crawl.conf')
 
