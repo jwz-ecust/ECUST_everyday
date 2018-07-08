@@ -5,7 +5,10 @@ import sys
 import re
 import os
 import mistune
-import ConfigParser
+try:
+    import ConfigParser
+except:
+    import configparser as ConfigParser
 import smtplib
 from smtplib import SMTP_SSL
 from email.header import Header
