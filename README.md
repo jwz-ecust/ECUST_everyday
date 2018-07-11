@@ -1,4 +1,4 @@
-# Daily ECUST_
+# Daily ECUST
 send messages and notifications of ECUST to subscribed users
 
 - This repo crawl message and notifications from home page of ECUST
